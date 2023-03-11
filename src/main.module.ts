@@ -9,6 +9,7 @@ import { ConfigService } from "@config/services/config.service";
 import { singletonGuard } from "@core/guards/singleton.guard";
 import { ConfigModule } from "@config/config.module";
 import { CoreModule } from "@core/core.module";
+import { ThemeService } from "@core/services/theme.service";
 
 @NgModule({
     declarations: [
@@ -24,7 +25,7 @@ import { CoreModule } from "@core/core.module";
         {
             provide: APP_INITIALIZER,
             useFactory: MainModule.factory,
-            deps: [ConfigService],
+            deps: [ConfigService, ThemeService],
             multi: true,
         }
     ],
@@ -35,9 +36,11 @@ export class MainModule {
         singletonGuard(parentModule, 'MainModule');
     }
 
-    static factory(config: ConfigService) {
+    static factory(config: ConfigService, theme: ThemeService) {
         return () => config.load().then(() => {
-            // Callbacks
+            return () => theme.load().then(() => {
+                // Callbacks
+            })
         });
     }
 }

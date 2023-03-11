@@ -1,14 +1,14 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { IConfig } from "@config/interfaces/config.interface";
+import { environment } from "@envs/environment.development";
 import { tap, catchError, of } from "rxjs";
-import { environment } from '@envs/environment';
-import { IConfig } from "../interfaces/config.interface";
 
 @Injectable()
 export class ConfigService {
     private static settings: IConfig;
 
-    get Settings() { return ConfigService.settings; }
+    static get SETTINGS(): Readonly<IConfig> { return ConfigService.settings; }
 
     constructor(private http: HttpClient) { }
 
@@ -19,6 +19,7 @@ export class ConfigService {
             this.http.get(jsonFile).pipe(
                 tap((response: any) => {
                     ConfigService.settings = <IConfig>response;
+                    ConfigService.settings.app.copyright = `©${(new Date()).getFullYear()} ${ConfigService.settings.app.owner}. All rights reserved.`;
                     resolve(true);
                 }),
                 catchError((error) => {

@@ -1,4 +1,8 @@
 {
+    "app": {
+        "name": "App Name",
+        "owner": "@NachoDPP"
+    },
     "env": {
         "name": "production"
     },
