@@ -25,6 +25,7 @@
     ],
     "paths": {
       "@config/*": ["src/config/*"],
+      "@core/*": ["src/core/*"],
       "@envs/*": ["src/envs/*"],
     }
   },

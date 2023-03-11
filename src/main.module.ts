@@ -5,6 +5,7 @@ import { ConfigService } from "@config/services/config.service";
 import { ConfigModule } from "@config/config.module";
 import { MainComponent } from "./main.component";
 import { mainFactory } from "./main.factory";
+import { CoreModule } from "@core/core.module";
 
 @NgModule({
     declarations: [
@@ -13,7 +14,8 @@ import { mainFactory } from "./main.factory";
     imports: [
         BrowserModule,
         MainRoutingModule,
-        ConfigModule
+        ConfigModule,
+        CoreModule
     ],
     providers: [
         {
