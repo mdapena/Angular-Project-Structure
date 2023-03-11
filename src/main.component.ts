@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
     selector: 'main-root',
     templateUrl: './main.component.html',
 })
-export class MainComponent {
-    title = 'angular-project-structure';
-}
+export class MainComponent { }
