@@ -1,10 +1,13 @@
-import { APP_INITIALIZER, NgModule } from "@angular/core";
+// ANGULAR IMPORTS
+import { APP_INITIALIZER, NgModule, Optional, SkipSelf } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+
+// MAIN IMPORTS
+import { MainComponent } from "./main.component";
 import { MainRoutingModule } from "./main-routing.module";
 import { ConfigService } from "@config/services/config.service";
+import { singletonGuard } from "@core/guards/singleton.guard";
 import { ConfigModule } from "@config/config.module";
-import { MainComponent } from "./main.component";
-import { mainFactory } from "@core/factories/main.factory";
 import { CoreModule } from "@core/core.module";
 
 @NgModule({
@@ -20,11 +23,21 @@ import { CoreModule } from "@core/core.module";
     providers: [
         {
             provide: APP_INITIALIZER,
-            useFactory: mainFactory,
+            useFactory: MainModule.factory,
             deps: [ConfigService],
             multi: true,
         }
     ],
     bootstrap: [MainComponent],
 })
-export class MainModule { }
+export class MainModule {
+    constructor(@Optional() @SkipSelf() parentModule: MainModule) {
+        singletonGuard(parentModule, 'MainModule');
+    }
+
+    static factory(config: ConfigService) {
+        return () => config.load().then(() => {
+            // Callbacks
+        });
+    }
+}
