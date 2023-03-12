@@ -1,28 +1,43 @@
-# GitHub Actions docs
-# https://help.github.com/en/articles/about-github-actions
-# https://help.github.com/en/articles/workflow-syntax-for-github-actions
-name: Continuous Integration
+name: Angular CI
 
+# Controls when the action will run.
 on:
+  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [master, Project-Structure]
+    branches: [master]
   pull_request:
     branches: [master]
 
-jobs:
-  ci:
-    name: Continuous Integration # Job name
-    runs-on: ubuntu-latest # Machine environment:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Use Node.js 18.15.0
-        uses: actions/setup-node@v1
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
         with:
-          node-version: 18.15.0
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build --prod
-      - name: Test
-        run: npm test --configuration=ci
+          # npm cache files are stored in `~/.npm` on Linux/macOS
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: npm install and npm run CI commands
+        run: |
+          npm i
+          npm run test:ci
+          npm run build:ci
