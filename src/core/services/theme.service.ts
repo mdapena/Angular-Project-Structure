@@ -18,7 +18,7 @@ export class ThemeService {
 
     constructor(@Inject(DOCUMENT) private readonly document: Document) { }
 
-    initialize() {
+    initialize(): void {
         const preferredTheme = this.PreferredTheme;
 
         if (preferredTheme != null && preferredTheme != undefined) {
@@ -26,7 +26,7 @@ export class ThemeService {
         }
     }
 
-    load() {
+    load(): Promise<boolean> {
         return new Promise((resolve) => {
             const preferredTheme = this.PreferredTheme;
 
@@ -38,11 +38,11 @@ export class ThemeService {
         });
     }
 
-    apply(preferredTheme: ThemeModeEnum) {
+    apply(preferredTheme: ThemeModeEnum): void {
         this.setMode(preferredTheme);
     }
 
-    private setMode(preferredTheme: ThemeModeEnum, options: { autoApply: boolean, autoSave: boolean } = { autoApply: true, autoSave: true }) {
+    private setMode(preferredTheme: ThemeModeEnum, options: { autoApply: boolean, autoSave: boolean } = { autoApply: true, autoSave: true }): void {
         switch (preferredTheme) {
             case ThemeModeEnum.DARK:
                 if (options.autoApply) { this.document.body.classList.toggle(ThemeService.DARK_MODE_DOM_TOKEN, true); }
