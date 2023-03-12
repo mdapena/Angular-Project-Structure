@@ -12,7 +12,7 @@ describe('Page Not Found Component', () => {
 
     it('should create the page not found component', () => {
         const fixture = TestBed.createComponent(PageNotFoundComponent);
-        const app = fixture.componentInstance;
-        expect(app).toBeTruthy();
+        const component = fixture.componentInstance;
+        expect(component).toBeTruthy();
     });
 });
