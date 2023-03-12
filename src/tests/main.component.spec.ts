@@ -16,8 +16,8 @@ describe('Main Component', () => {
 
     it('should create the main component', () => {
         const fixture = TestBed.createComponent(MainComponent);
-        const app = fixture.componentInstance;
-        expect(app).toBeTruthy();
+        const component = fixture.componentInstance;
+        expect(component).toBeTruthy();
     });
 
     it('should render a router outlet', () => {
