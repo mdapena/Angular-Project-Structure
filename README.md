@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/images/angular.png" alt="angular-logo" width="120px" height="120px"/>
+  <img src="./docs/images/angular.png" alt="angular-logo" width="180px" height="180px"/>
   <br>
   <i>A modular and domain driven structure for Angular projects</i>
   <br>
