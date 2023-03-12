@@ -11,11 +11,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is a proposal for the organization and structure of an Angular project using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of the Angular application and infrastructure. This project defines directory structure in an Angular application and it is a working application. You are free to design your own tree structure if these are not suitable.
+This project is a proposal for the organization and structure of an Angular project using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of the Angular application and infrastructure. This project defines directory structure in an Angular application and it is a working application. You are free to design your own tree structure if these are not suitable. 
 
 ## Summary
 
 The main idea behind this structure is to create an application context section that groups all application features and domain modules to be implemented, as well as a shared module that contains all reusable classes, resources and components. Outside of this context will be all classes and resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so forth.
+
+## Table of content
+
+- [App Directory](./docs/app-module.md)
+- [Shared Directory](./docs/shared-module.md)
+- [Config Directory](./docs/config-module.md)
+- [Core Directory](./docs/core-module.md)
+- [Tests Directory](./docs/tests-directory.md)
+
 
 ## Directory Tree Sections
 
@@ -40,7 +49,7 @@ These are the sections that this repository proposes to add to the default struc
 |  ┣ services
 |  |  ┗ config.service.ts
 |  ┗ config.module.ts
-┣ core
+┣ [core](./docs/core-module.md "core")
 |  ┣ guards
 |  |  ┗ singleton.guard.ts
 |  ┣ pages
@@ -54,7 +63,7 @@ These are the sections that this repository proposes to add to the default struc
 |  |  ┗ environment.interfaces.ts
 |  ┣ environment.development.ts
 |  ┗ environment.ts
-┣ test
+┣ tests
 |  ┣ app
 |  |  ┣ app-routing.module.spec.ts
 |  |  ┗ app.module.spec.ts
@@ -75,51 +84,45 @@ These are the sections that this repository proposes to add to the default struc
 ┗ main.ts
 ```
 
-##### Note
-
-Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
-
 ## Development Setup
 
 ### Prerequisites
 
 - Install [Node.js] which includes [Node Package Manager][npm]
 
-### Setting Up a Project
+### Development server
 
-Install the Angular CLI globally:
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-```
-npm install -g @angular/cli
-```
+### Build
 
-Create workspace:
+- Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-```
-ng new [PROJECT NAME]
-```
+### Running unit tests
 
-Run the application:
+- Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```
-cd [PROJECT NAME]
-ng serve
-```
+## Reminder 
+Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
 
-Angular is cross-platform, fast, scalable, has incredible tooling, and is loved by millions.
+## License
 
-## Development server
+Copyright (c) Manuel Da Pena. [@NachoDPP](https://github.com/NachoDPP "@NachoDPP")
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Build
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
