@@ -17,7 +17,7 @@ This project is a proposal for the organization and structure of an Angular proj
 
 The main idea behind this structure is to create an application context section that groups all application features and domain modules to be implemented, as well as a shared module that contains all reusable classes, resources and components. Outside of this context will be all classes and resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so forth.
 
-## Table of content
+## Table of Content
 
 - [App Directory](./docs/app-module.md)
 - [Shared Directory](./docs/shared-module.md)
