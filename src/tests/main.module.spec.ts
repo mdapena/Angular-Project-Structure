@@ -1,12 +1,10 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { ConfigService } from '@config/services/config.service';
-import { ThemeService } from '@core/services/theme.service';
 import { environment } from '@config/environments/environment';
 import { MainModule } from '../main.module';
 
 describe('MainModule', () => {
     let configService: ConfigService;
-    let themeService: ThemeService;
     let module: MainModule;
 
     beforeEach(() => {
@@ -16,7 +14,6 @@ describe('MainModule', () => {
 
         module = TestBed.inject(MainModule);
         configService = TestBed.inject(ConfigService);
-        themeService = TestBed.inject(ThemeService);
     });
 
     it('should be initialized', () => {
@@ -24,7 +21,7 @@ describe('MainModule', () => {
     });
 
     it('should resolve the APP_INITIALIZER promise with app settings', waitForAsync(() => {
-        MainModule.factory(configService, themeService)().then(
+        MainModule.factory(configService)().then(
             () => {
                 expect(ConfigService.SETTINGS).toBeDefined();
                 expect(ConfigService.SETTINGS.app.name).toBeDefined();
