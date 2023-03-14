@@ -26,7 +26,6 @@
     "paths": {
       "@config/*": ["src/config/*"],
       "@core/*": ["src/core/*"],
-      "@envs/*": ["src/envs/*"],
       "@landing/*": ["src/app/landing/*"],
     }
   },

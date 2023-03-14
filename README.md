@@ -41,28 +41,28 @@ These are the sections that this repository proposes to add to the default struc
 |  ┗ favicons
 |      ┗ favicon.ico
 ┣ config
+|  ┣ enums
+|  |  ┗ environment.enum.ts
+|  ┣ environments
+|  |  ┣ environment.devt.ts
+|  |  ┗ environment.ts
 |  ┣ interfaces
-|  |  ┗ config.interface.ts
-|  ┣ jsons
-|  |  ┣ config.development.json
-|  |  ┗ config.production.json
+|  |  ┣ config.interface.ts
+|  |  ┗ environment.interfaces.ts
 |  ┣ services
 |  |  ┗ config.service.ts
-|  ┗ config.module.ts
-┣ [core](./docs/core-module.md "core")
+|  ┣ config.module.ts
+|  ┣ envconfig.devt.json
+|  ┗ envconfig.prod.json
+┣ core
 |  ┣ guards
 |  |  ┗ singleton.guard.ts
 |  ┣ pages
 |  |  ┗ page-not-found
 |  |     ┗ page-not-found.component|.html|.scss|.ts
 |  ┗ core.module.ts
-┣ environments
-|  ┣ enums
-|  |  ┗ environment.enum.ts
-|  ┣ interfaces
-|  |  ┗ environment.interfaces.ts
-|  ┣ environment.development.ts
-|  ┗ environment.ts
+┣ styles
+|  ┗ styles.scss
 ┣ tests
 |  ┣ app
 |  |  ┣ app-routing.module.spec.ts

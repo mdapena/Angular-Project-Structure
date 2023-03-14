@@ -7,12 +7,17 @@ This directory contains all classes and resources associated with the applicatio
 ```bash
 .
 ┣ config
-   ┣ interfaces
-      ┗ config.interface.ts
-   ┣ jsons
-      ┣ config.development.json
-      ┗ config.production.json
-   ┣ services
-      ┗ config.service.ts
-   ┗ config.module.ts
+|  ┣ enums
+|  |  ┗ environment.enum.ts
+|  ┣ environments
+|  |  ┣ environment.devt.ts
+|  |  ┗ environment.ts
+|  ┣ interfaces
+|  |  ┣ config.interface.ts
+|  |  ┗ environment.interfaces.ts
+|  ┣ services
+|  |  ┗ config.service.ts
+|  ┣ config.module.ts
+|  ┣ envconfig.devt.json
+|  ┗ envconfig.prod.json
 ```

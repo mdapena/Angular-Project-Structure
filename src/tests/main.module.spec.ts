@@ -1,7 +1,7 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { ConfigService } from '@config/services/config.service';
 import { ThemeService } from '@core/services/theme.service';
-import { environment } from '@envs/environment.development';
+import { environment } from '@config/environments/environment';
 import { MainModule } from '../main.module';
 
 describe('MainModule', () => {

@@ -1,24 +1,24 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { IConfig } from "@config/interfaces/config.interface";
-import { environment } from "@envs/environment.development";
 import { tap, catchError, of } from "rxjs";
+import { environment } from "@config/environments/environment";
+import { IEnvConfig } from "@config/interfaces/envconfig.interface";
 
 @Injectable()
 export class ConfigService {
-    private static settings: IConfig;
+    private static settings: IEnvConfig;
 
-    static get SETTINGS(): Readonly<IConfig> { return ConfigService.settings; }
+    static get SETTINGS(): Readonly<IEnvConfig> { return ConfigService.settings; }
 
     constructor(private http: HttpClient) { }
 
     /** Loads and configures the runtime application with JSON files */
     load() {
-        const jsonFile = `config/jsons/config.${environment.name}.json`;
+        const jsonFile = `config/envconfig.${environment.name}.json`;
         return new Promise((resolve) => {
             this.http.get(jsonFile).pipe(
                 tap((response: any) => {
-                    ConfigService.settings = <IConfig>response;
+                    ConfigService.settings = <IEnvConfig>response;
                     ConfigService.settings.app.copyright = `©${(new Date()).getFullYear()} ${ConfigService.settings.app.owner}. All rights reserved.`;
                     resolve(true);
                 }),
