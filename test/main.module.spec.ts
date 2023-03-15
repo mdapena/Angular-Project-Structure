@@ -1,7 +1,7 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { ConfigService } from '@config/services/config.service';
 import { environment } from '@config/environments/environment';
-import { MainModule } from '../main.module';
+import { MainModule } from '../src/main.module';
 
 describe('MainModule', () => {
     let configService: ConfigService;

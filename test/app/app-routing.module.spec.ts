@@ -1,15 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { MainRoutingModule } from '../main-routing.module';
+import { AppRoutingModule } from '../../src/app/app-routing.module';
 
-describe('MainRoutingModule', () => {
-    let module: MainRoutingModule;
+describe('AppRoutingModule', () => {
+    let module: AppRoutingModule;
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [MainRoutingModule],
+            imports: [AppRoutingModule],
         }).compileComponents();
 
-        module = TestBed.inject(MainRoutingModule);
+        module = TestBed.inject(AppRoutingModule);
     });
 
     it('should be initialized', () => {

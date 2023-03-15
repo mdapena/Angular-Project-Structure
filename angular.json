@@ -103,7 +103,11 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "include": [
+              "../test/**/**.spec.ts",
+              "../test/**/**.d.ts"
+            ]
           }
         }
       }
