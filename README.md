@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is a proposal for the organization and structure of an Angular project using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of the Angular application and infrastructure. This project defines directory structure in an Angular application and it is a working application. You are free to design your own tree structure if these are not suitable. 
+This project is a proposal for the organization and structure of an Angular project using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of the Angular application and infrastructure. This project defines directory structure in an Angular application and it is a working application. You are free to design your own tree structure if these are not suitable.
 
 ## Summary
 
@@ -25,63 +25,63 @@ The main idea behind this structure is to create an application context section 
 - [Core Directory](./docs/core-module.md)
 - [Tests Directory](./docs/tests-directory.md)
 
-
 ## Directory Tree Sections
 
 These are the sections that this repository proposes to add to the default structure of an Angular application. See the Directory Structures section for more information.
 
 ```bash
 .
-┣ app
-|  ┣ shared
-|  |  ┗ shared.module.ts
-|  ┣ app-routing.module.ts
-|  ┗ app.module.ts
-┣ assets
-|  ┗ favicons
-|      ┗ favicon.ico
-┣ config
-|  ┣ enums
-|  |  ┗ environment.enum.ts
-|  ┣ environments
-|  |  ┣ environment.devt.ts
-|  |  ┗ environment.ts
-|  ┣ interfaces
-|  |  ┣ config.interface.ts
-|  |  ┗ environment.interfaces.ts
-|  ┣ services
-|  |  ┗ config.service.ts
-|  ┣ config.module.ts
-|  ┣ envconfig.devt.json
-|  ┗ envconfig.prod.json
-┣ core
-|  ┣ guards
-|  |  ┗ singleton.guard.ts
-|  ┣ pages
-|  |  ┗ page-not-found
-|  |     ┗ page-not-found.component|.html|.scss|.ts
-|  ┗ core.module.ts
-┣ styles
-|  ┗ styles.scss
-┣ tests
-|  ┣ app
-|  |  ┣ app-routing.module.spec.ts
-|  |  ┗ app.module.spec.ts
-|  ┣ config
-|  |  ┗ config.service.spec.ts
-|  ┣ core
-|  |  ┣ pages
-|  |  |  ┗ page-not-found.component.spec.ts
-|  |  ┗ singleton.guard.spec.ts
-|  ┣ main-routing.module.spec.ts
-|  ┣ main.component.spec.ts
-|  ┗ main.module.spec.ts
-┣ index.html
-┣ main-routing.module.ts
-┣ main.component.html
-┣ main.component.ts
-┣ main.module.ts
-┗ main.ts
+| .
+| ┣ app
+| |  ┣ shared
+| |  |  ┗ shared.module.ts
+| |  ┣ app-routing.module.ts
+| |  ┗ app.module.ts
+| ┣ assets
+| |  ┗ favicons
+| |      ┗ favicon.ico
+| ┣ config
+| |  ┣ enums
+| |  |  ┗ environment.enum.ts
+| |  ┣ environments
+| |  |  ┣ environment.devt.ts
+| |  |  ┗ environment.ts
+| |  ┣ interfaces
+| |  |  ┣ config.interface.ts
+| |  |  ┗ environment.interfaces.ts
+| |  ┣ services
+| |  |  ┗ config.service.ts
+| |  ┣ config.module.ts
+| |  ┣ envconfig.devt.json
+| |  ┗ envconfig.prod.json
+| ┣ core
+| |  ┣ guards
+| |  |  ┗ singleton.guard.ts
+| |  ┣ pages
+| |  |  ┗ page-not-found
+| |  |     ┗ page-not-found.component|.html|.scss|.ts
+| |  ┗ core.module.ts
+| ┣ styles
+| |  ┗ styles.scss
+| ┣ index.html
+| ┣ main-routing.module.ts
+| ┣ main.component.html
+| ┣ main.component.ts
+| ┣ main.module.ts
+| ┗ main.ts
+┗ test
+   ┣ app
+   |  ┣ app-routing.module.spec.ts
+   |  ┗ app.module.spec.ts
+   ┣ config
+   |  ┗ config.service.spec.ts
+   ┣ core
+   |  ┣ pages
+   |  |  ┗ page-not-found.component.spec.ts
+   |  ┗ singleton.guard.spec.ts
+   ┣ main-routing.module.spec.ts
+   ┣ main.component.spec.ts
+   ┗ main.module.spec.ts
 ```
 
 ## Development Setup
@@ -102,7 +102,8 @@ These are the sections that this repository proposes to add to the default struc
 
 - Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Reminder 
+## Reminder
+
 Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
 
 ## License
