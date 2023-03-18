@@ -2,9 +2,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// APP IMPORTS
-import { LandingPageComponent } from '@landing/pages/landing-page/landing-page.component';
-
 /** App root paths */
 const routes: Routes = [
     {
@@ -13,7 +10,7 @@ const routes: Routes = [
             {
                 path: '',
                 pathMatch: 'full',
-                component: LandingPageComponent,
+                loadChildren: () => import('./landing/landing.module').then((m) => m.LandingModule),
             },
         ]
     },
