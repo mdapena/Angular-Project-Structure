@@ -1,10 +1,7 @@
-$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
-$font-size: 14px;
-
 :host {
-    font-family: $font-family;
-    font-size: $font-size;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
     color: #333;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -120,8 +117,8 @@ svg#clouds {
 .btn span {
     display: block;
     padding: 12px 24px;
-    font-family: $font-family;
-    font-size: $font-size;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .btn:before {
