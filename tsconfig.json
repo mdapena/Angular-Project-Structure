@@ -26,8 +26,7 @@
     "paths": {
       "@config/*": ["src/config/*"],
       "@core/*": ["src/core/*"],
-      "@shared/*": ["src/app/shared/*"],
-      "@landing/*": ["src/app/landing/*"],
+      "@app/*": ["src/app/*"],
     }
   },
   "angularCompilerOptions": {

@@ -1,15 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { AppModule } from '@app/app.module';
+import { LandingModule } from '@app/landing/landing.module';
 
-describe('AppModule', () => {
-    let module: AppModule;
+describe('LandingModule', () => {
+    let module: LandingModule;
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [AppModule],
+            imports: [LandingModule],
         }).compileComponents();
 
-        module = TestBed.inject(AppModule);
+        module = TestBed.inject(LandingModule);
     });
 
     it('should be initialized', () => {

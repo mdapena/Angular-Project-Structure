@@ -1,15 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { AppModule } from '@app/app.module';
+import { SharedModule } from '@app/shared/shared.module';
 
-describe('AppModule', () => {
-    let module: AppModule;
+describe('SharedModule', () => {
+    let module: SharedModule;
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [AppModule],
+            imports: [SharedModule],
         }).compileComponents();
 
-        module = TestBed.inject(AppModule);
+        module = TestBed.inject(SharedModule);
     });
 
     it('should be initialized', () => {

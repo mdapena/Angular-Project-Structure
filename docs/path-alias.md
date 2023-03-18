@@ -11,7 +11,6 @@ Typescript aliases allow you to define a word/alias in the application for an ab
 ...
 @config 
 @core
-@shared
-@landing
+@app
 ...
 ```
