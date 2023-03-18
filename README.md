@@ -102,17 +102,19 @@ src
 |   ┗ main.module.spec.ts
 ```
 
-## Directory Structures
+## Directory Structure Parts
+
+#### Sections
 
 - [App Directory](./docs/app-directory.md)
-  - [Shared Directory](./docs/shared-directory.md)
+- [Shared Directory](./docs/shared-directory.md)
 - [Assets Directory](./docs/assets-directory.md)
 - [Config Directory](./docs/config-directory.md)
 - [Core Directory](./docs/core-directory.md)
 - [Styles Directory](./docs/styles-directory.md)
 - [Test Directory](./docs/test-directory.md)
 
-### Extra
+#### Extras
 
 - [Path Alias](./docs/path-alias.md)
 
