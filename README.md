@@ -21,10 +21,9 @@ The main idea behind this structure is to create an application context section 
 
 These are the sections that this repository proposes to add to the default structure of an Angular application. See the Directory Structures section for more information.
 
-#### Src Directory
-
 ```bash
-src
+# ------------- SRC DIRECTORY
+.
 ┣ app
 |  ┣ landing
 |  |  ┣ pages
@@ -77,9 +76,8 @@ src
 ┗ main.ts
 ```
 
-#### Test Directory
-
 ```bash
+# ------------- TEST DIRECTORY
 .
 ┣ src
 |   ...
@@ -108,27 +106,31 @@ src
 - [Styles Directory](./docs/styles-directory.md)
 - [Test Directory](./docs/test-directory.md)
 
-## Reminder
+## Installation
 
-Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
+```bash
+# Prerequisites: Install [Node.js] which includes [Node Package Manager][npm]
+$ npm install
+```
 
-## Development Setup
+## Running the app
 
-### Prerequisites
+```bash
+# Development
+$ ng serve
+```
 
-- Install [Node.js] which includes [Node Package Manager][npm]
+```bash
+# Production Mode
+$ ng build
+```
 
-### Development server
+## Test
 
-- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-### Build
-
-- Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-### Running unit tests
-
-- Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+# Unit Tests
+$ ng test
+```
 
 ## License
 
@@ -151,3 +153,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+## Reminder
+
+Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
