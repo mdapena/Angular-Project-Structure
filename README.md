@@ -21,7 +21,7 @@ The main idea behind this structure is to create an application context section 
 
 These are the sections that this repository proposes to add to the default structure of an Angular application. See the Directory Structures section for more information.
 
-#### SRC Directory
+#### Src Directory
 
 ```bash
 src
@@ -78,19 +78,19 @@ src
 .
 ┣ src
 |   ...
-┗ test
-    ┣ app
-    |  ┣ app-routing.module.spec.ts
-    |  ┗ app.module.spec.ts
-    ┣ config
-    |  ┗ config.service.spec.ts
-    ┣ core
-    |  ┣ pages
-    |  |  ┗ page-not-found.component.spec.ts
-    |  ┗ singleton.guard.spec.ts
-    ┣ main-routing.module.spec.ts
-    ┣ main.component.spec.ts
-    ┗ main.module.spec.ts
+┣ test
+|   ┣ app
+|   |  ┣ app-routing.module.spec.ts
+|   |  ┗ app.module.spec.ts
+|   ┣ config
+|   |  ┗ config.service.spec.ts
+|   ┣ core
+|   |  ┣ pages
+|   |  |  ┗ page-not-found.component.spec.ts
+|   |  ┗ singleton.guard.spec.ts
+|   ┣ main-routing.module.spec.ts
+|   ┣ main.component.spec.ts
+|   ┗ main.module.spec.ts
 ```
 
 ## Directory Structures
@@ -100,6 +100,10 @@ src
 - [Config Directory](./docs/config-module.md)
 - [Core Directory](./docs/core-module.md)
 - [Tests Directory](./docs/tests-directory.md)
+
+## Reminder
+
+Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
 
 ## Development Setup
 
@@ -118,10 +122,6 @@ src
 ### Running unit tests
 
 - Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Reminder
-
-Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
 
 ## License
 
