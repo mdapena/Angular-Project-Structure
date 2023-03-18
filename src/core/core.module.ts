@@ -6,10 +6,20 @@ import { RouterModule } from '@angular/router';
 // CORE IMPORTS
 import { singletonGuard } from './guards/singleton.guard';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ToolbarComponent } from './layout/toolbar/toolbar.component';
 
 @NgModule({
-    declarations: [PageNotFoundComponent],
-    imports: [CommonModule, RouterModule]
+    declarations: [
+        ToolbarComponent,
+        PageNotFoundComponent
+    ],
+    imports: [
+        CommonModule,
+        RouterModule
+    ],
+    exports: [
+        ToolbarComponent
+    ]
 })
 export class CoreModule {
     constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
