@@ -19,7 +19,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is a proposal for an Angular project's organization and structure using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of Angular's application and infrastructure. This project defines a directory structure for an Angular application, feel free to design your own tree structure if these are not suitable.
+This project is a proposal for the organisation and structure of an Angular project using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of Angular's application and infrastructure. This project defines a directory structure for an Angular application, feel free to design your own tree structure if these are not suitable.
 
 ## Summary
 
