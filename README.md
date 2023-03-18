@@ -95,11 +95,12 @@ src
 
 ## Directory Structures
 
-- [App Directory](./docs/app-module.md)
-- [Shared Directory](./docs/shared-module.md)
-- [Config Directory](./docs/config-module.md)
-- [Core Directory](./docs/core-module.md)
-- [Tests Directory](./docs/tests-directory.md)
+- [App Directory](./docs/app-directory.md)
+- [Shared Directory](./docs/shared-directory.md)
+- [Config Directory](./docs/config-directory.md)
+- [Core Directory](./docs/core-directory.md)
+- [Styles Directory](./docs/styles-directory.md)
+- [Test Directory](./docs/test-directory.md)
 
 ## Reminder
 
