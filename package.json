@@ -1,6 +1,9 @@
 {
   "name": "angular-project-structure",
   "version": "0.0.0",
+  "description": "A modular/domain driven structure for Angular projects",
+  "author": "Manuel Da Pena",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
