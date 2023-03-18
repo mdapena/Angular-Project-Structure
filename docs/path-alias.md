@@ -5,13 +5,13 @@
 
 # Path Alias
 
-Typescript aliases allow you to define a word/alias in the application for an absolute path from which you can resolve path.
+Typescript aliases allow you to define a word/alias in the application for an absolute path from which the path can be resolved.
 
 ```bash
-    ...
-    @config 
-    @core
-    @shared
-    @landing
-    ...
+...
+@config 
+@core
+@shared
+@landing
+...
 ```
