@@ -11,19 +11,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is a proposal for the organization and structure of an Angular project using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of the Angular application and infrastructure. This project defines directory structure in an Angular application and it is a working application. You are free to design your own tree structure if these are not suitable.
+This project is a proposal for an Angular project's organization and structure using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of Angular's application and infrastructure. This project defines a directory structure for an Angular application, feel free to design your own tree structure if these are not suitable.
 
 ## Summary
 
-The main idea behind this structure is to create an application context section that groups all application features and domain modules to be implemented, as well as a shared module that contains all reusable classes, resources and components. Outside of this context will be all classes and resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so forth.
-
-## Table of Content
-
-- [App Directory](./docs/app-module.md)
-- [Shared Directory](./docs/shared-module.md)
-- [Config Directory](./docs/config-module.md)
-- [Core Directory](./docs/core-module.md)
-- [Tests Directory](./docs/tests-directory.md)
+The main idea behind this structure is to create an application context section that groups all application features and domain modules, as well as a shared module that contains all reusable classes, resources, and components. All resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing sections, and so on, will be located outside of this context.
 
 ## Directory Tree Sections
 
@@ -37,7 +29,7 @@ src
 |  ┣ landing
 |  |  ┣ pages
 |  |  |  ┗ landing-page
-|  |  |     ┗ page-not-found.component|.html|.scss|.ts
+|  |  |     ┗ landing-page.component|.html|.scss|.ts
 |  |  ┗ landing.module.ts
 |  ┣ shared
 |  |  ┗ shared.module.ts
@@ -100,6 +92,14 @@ src
     ┣ main.component.spec.ts
     ┗ main.module.spec.ts
 ```
+
+## Directory Structures
+
+- [App Directory](./docs/app-module.md)
+- [Shared Directory](./docs/shared-module.md)
+- [Config Directory](./docs/config-module.md)
+- [Core Directory](./docs/core-module.md)
+- [Tests Directory](./docs/tests-directory.md)
 
 ## Development Setup
 
