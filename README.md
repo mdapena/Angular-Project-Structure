@@ -102,6 +102,7 @@ src
 
 - [App Directory](./docs/app-directory.md)
   - [Shared Directory](./docs/shared-directory.md)
+- [Assets Directory](./docs/assets-directory.md)
 - [Config Directory](./docs/config-directory.md)
 - [Core Directory](./docs/core-directory.md)
 - [Styles Directory](./docs/styles-directory.md)
