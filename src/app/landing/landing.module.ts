@@ -8,13 +8,13 @@ import { LandingFooterComponent } from './components/landing-footer/landing-foot
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 @NgModule({
-  declarations: [
-    LandingPageComponent,
-    LandingToolbarComponent,
-    LandingFooterComponent,
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        LandingPageComponent,
+        LandingToolbarComponent,
+        LandingFooterComponent,
+    ],
+    imports: [
+        CommonModule
+    ]
 })
 export class LandingModule { }

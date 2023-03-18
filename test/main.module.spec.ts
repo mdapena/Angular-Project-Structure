@@ -21,7 +21,7 @@ describe('MainModule', () => {
     });
 
     it('should resolve the APP_INITIALIZER promise with app settings', waitForAsync(() => {
-        MainModule.factory(configService)().then(
+        MainModule.forRoot(configService)().then(
             () => {
                 expect(ConfigService.SETTINGS).toBeDefined();
                 expect(ConfigService.SETTINGS.app.name).toBeDefined();

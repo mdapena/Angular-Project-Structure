@@ -1,6 +1,7 @@
 import { EnvironmentEnum } from "@config/enums/environment.enum";
 
-/** `IEnvConfig` is an interface designed to implement type-safe environment config schemas */
+/** IEnvConfig is an interface designed to implement type-safe schemas 
+ *  for environment configuration. */
 export interface IEnvConfig {
     env: {
         name: EnvironmentEnum;

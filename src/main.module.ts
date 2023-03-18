@@ -23,7 +23,7 @@ import { CoreModule } from "@core/core.module";
     providers: [
         {
             provide: APP_INITIALIZER,
-            useFactory: MainModule.factory,
+            useFactory: MainModule.forRoot,
             deps: [ConfigService],
             multi: true,
         }
@@ -35,7 +35,10 @@ export class MainModule {
         singletonGuard(parentModule, 'MainModule');
     }
 
-    static factory(config: ConfigService) {
+    /** Loads process environment variables and registers custom 
+     * configurations globally.
+     *  @param config */
+    static forRoot(config: ConfigService) {
         return () => config.load().then(() => {
             // Callbacks
         });
