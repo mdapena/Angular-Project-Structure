@@ -10,8 +10,8 @@ The shared module contains all reusable classes and resources that are used betw
 ```bash
 .
 ┣ app 
-   ┣ shared # All reusable classes and resources that are used between domain/feature modules should be added here
-      ┗ shared.module.ts
-   ┣ app-routing.module.ts
-   ┗ app.module.ts
+|  ┣ shared # All reusable classes and resources that are used between domain/feature modules should be added here
+|  |  ┗ shared.module.ts
+|  ┣ app-routing.module.ts
+|  ┗ app.module.ts
 ```
