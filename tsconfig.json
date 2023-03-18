@@ -27,6 +27,7 @@
       "@config/*": ["src/config/*"],
       "@core/*": ["src/core/*"],
       "@app/*": ["src/app/*"],
+      "@assets/*": ["src/assets/*"],
     }
   },
   "angularCompilerOptions": {
