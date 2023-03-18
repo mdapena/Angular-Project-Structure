@@ -101,7 +101,7 @@ src
 ## Directory Structures
 
 - [App Directory](./docs/app-directory.md)
-- [Shared Directory](./docs/shared-directory.md)
+  - [Shared Directory](./docs/shared-directory.md)
 - [Config Directory](./docs/config-directory.md)
 - [Core Directory](./docs/core-directory.md)
 - [Styles Directory](./docs/styles-directory.md)
