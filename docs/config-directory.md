@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../docs/images/config_directory.svg" alt="config-directory" width="48px" height="48px" style="color: #5f6368;"/>
+  <img src="../docs/images/config_directory.svg" alt="config-directory" width="48px" height="48px"/>
   <br>
 </p>
 

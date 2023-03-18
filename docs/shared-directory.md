@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../docs/images/shared_directory.svg" alt="shared-directory" width="48px" height="48px" style="color: #5f6368;"/>
+  <img src="../docs/images/shared_directory.svg" alt="shared-directory" width="48px" height="48px"/>
   <br>
 </p>
 
