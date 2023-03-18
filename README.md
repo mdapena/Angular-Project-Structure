@@ -112,6 +112,10 @@ src
 - [Styles Directory](./docs/styles-directory.md)
 - [Test Directory](./docs/test-directory.md)
 
+### Extra
+
+- [Path Alias](./docs/path-alias.md)
+
 ## Installation
 
 ```bash
