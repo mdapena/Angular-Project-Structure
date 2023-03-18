@@ -1,7 +1,15 @@
 <p align="center">
   <img src="./docs/images/angular.png" alt="angular-logo" width="180px" height="180px"/>
   <br>
-  <i>A modular and domain driven structure for Angular projects</i>
+  <i>A modular/domain driven structure for Angular projects</i>
+  <br>
+  <br>
+  <a href="https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt" target="_blank"><img src="https://badgen.net/badge/license/MIT/blue" alt="license" /></a>
+  <a href="https://www.npmjs.com/@angular/core">
+    <img src="https://badgen.net/badge/icon/v15.2.0/green?icon=npm&label" alt="Angular on npm" />
+  </a>
+  <a href="https://www.github.com/angular/angular" target="_blank"><img src="https://img.shields.io/badge/angular-love-blue?logo=angular&angular=love" alt="angular-love" /></a>
+  <br>
   <br>
 </p>
 
