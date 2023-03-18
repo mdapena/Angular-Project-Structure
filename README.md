@@ -35,9 +35,11 @@ src
 |  |  ┗ shared.module.ts
 |  ┣ app-routing.module.ts
 |  ┗ app.module.ts
+|
 ┣ assets
 |  ┗ favicons
 |      ┗ favicon.ico
+|
 ┣ config
 |  ┣ enums
 |  |  ┗ environment.enum.ts
@@ -52,6 +54,7 @@ src
 |  ┣ config.module.ts
 |  ┣ envconfig.devt.json
 |  ┗ envconfig.prod.json
+|
 ┣ core
 |  ┣ guards
 |  |  ┗ singleton.guard.ts
@@ -62,8 +65,10 @@ src
 |  |  ┗ page-not-found
 |  |     ┗ page-not-found.component|.html|.scss|.ts
 |  ┗ core.module.ts
+|
 ┣ styles
 |  ┗ styles.scss
+|
 ┣ index.html
 ┣ main-routing.module.ts
 ┣ main.component.html
