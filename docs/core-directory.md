@@ -1,7 +1,5 @@
 # Core Directory
 
-## Description
-
 This module is designed for global functionalities. This directory should contain resources that are always loaded, including route guards, HTTP interceptors, infrastructure-level services like ThemeService and logging, layout components, and routing error pages.
 
 ```bash
