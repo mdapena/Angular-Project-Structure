@@ -8,7 +8,7 @@ The app directory contains a collection of domain/feature modules that are self-
 |  ┣ landing
 |  |  ┣ pages
 |  |  |  ┗ landing-page
-|  |  |     ┗ page-not-found.component|.html|.scss|.ts
+|  |  |     ┗ landing-page.component|.html|.scss|.ts
 |  |  ┗ landing.module.ts
 |  ┣ shared
 |  |  ┗ shared.module.ts
