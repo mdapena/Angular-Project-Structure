@@ -7,8 +7,13 @@ The app directory contains a collection of domain/feature modules that are self-
 ```bash
 .
 ┣ app # All domain/feature modules should be added here.
-   ┣ shared
-      ┗ shared.module.ts
-   ┣ app-routing.module.ts
-   ┗ app.module.ts
+|  ┣ landing
+|  |  ┣ pages
+|  |  |  ┗ landing-page
+|  |  |     ┗ page-not-found.component|.html|.scss|.ts
+|  |  ┗ landing.module.ts
+|  ┣ shared
+|  |  ┗ shared.module.ts
+|  ┣ app-routing.module.ts
+|  ┗ app.module.ts
 ```

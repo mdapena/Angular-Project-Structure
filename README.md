@@ -34,6 +34,11 @@ These are the sections that this repository proposes to add to the default struc
 ```bash
 src
 ┣ app
+|  ┣ landing
+|  |  ┣ pages
+|  |  |  ┗ landing-page
+|  |  |     ┗ page-not-found.component|.html|.scss|.ts
+|  |  ┗ landing.module.ts
 |  ┣ shared
 |  |  ┗ shared.module.ts
 |  ┣ app-routing.module.ts
