@@ -63,6 +63,9 @@ src
 ┣ core
 |  ┣ guards
 |  |  ┗ singleton.guard.ts
+|  ┣ layout
+|  |  ┗ toolbar
+|  |     ┗ toolbar.component|.html|.scss|.ts
 |  ┣ pages
 |  |  ┗ page-not-found
 |  |     ┗ page-not-found.component|.html|.scss|.ts

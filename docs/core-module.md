@@ -2,15 +2,18 @@
 
 ## Description
 
-This module is for classes used by app.module. This directory should contain resources that are always loaded, including route guards, HTTP interceptors and application level services such as ThemeService and logging.
+This module is designed for global functionalities. This directory should contain resources that are always loaded, including route guards, HTTP interceptors, infrastructure-level services like ThemeService and logging, layout components, and routing error pages.
 
 ```bash
 .
 ┣ core
-   ┣ guards
-      ┗ singleton.guard.ts
-   ┣ pages
-      ┗ page-not-found
-         ┗ page-not-found.component|.html|.scss|.ts
-   ┗ core.module.ts
+|  ┣ guards
+|  |  ┗ singleton.guard.ts
+|  ┣ layout
+|  |  ┗ toolbar
+|  |     ┗ toolbar.component|.html|.scss|.ts
+|  ┣ pages
+|  |  ┗ page-not-found
+|  |     ┗ page-not-found.component|.html|.scss|.ts
+|  ┗ core.module.ts
 ```
