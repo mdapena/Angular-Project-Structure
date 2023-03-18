@@ -22,58 +22,63 @@ The main idea behind this structure is to create an application context section 
 These are the sections that this repository proposes to add to the default structure of an Angular application. See the Directory Structures section for more information.
 
 ```bash
+src
+ ┣ app
+ |  ┣ landing
+ |  |  ┣ pages
+ |  |  |  ┗ landing-page
+ |  |  |     ┗ landing-page.component|.html|.scss|.ts
+ |  |  ┗ landing.module.ts
+ |  ┣ shared
+ |  |  ┗ shared.module.ts
+ |  ┣ app-routing.module.ts
+ |  ┗ app.module.ts
+ |
+ ┣ assets
+ |  ┗ favicons
+ |      ┗ favicon.ico
+ |
+ ┣ config
+ |  ┣ enums
+ |  |  ┗ environment.enum.ts
+ |  ┣ environments
+ |  |  ┣ environment.devt.ts
+ |  |  ┗ environment.ts
+ |  ┣ interfaces
+ |  |  ┣ config.interface.ts
+ |  |  ┗ environment.interfaces.ts
+ |  ┣ services
+ |  |  ┗ config.service.ts
+ |  ┣ config.module.ts
+ |  ┣ envconfig.devt.json
+ |  ┗ envconfig.prod.json
+ |
+ ┣ core
+ |  ┣ guards
+ |  |  ┗ singleton.guard.ts
+ |  ┣ layout
+ |  |  ┗ toolbar
+ |  |     ┗ toolbar.component|.html|.scss|.ts
+ |  ┣ pages
+ |  |  ┗ page-not-found
+ |  |     ┗ page-not-found.component|.html|.scss|.ts
+ |  ┗ core.module.ts
+ |
+ ┣ styles
+ |  ┗ styles.scss
+ |
+ ┣ index.html
+ ┣ main-routing.module.ts
+ ┣ main.component.html
+ ┣ main.component.ts
+ ┣ main.module.ts
+ ┗ main.ts
+```
+
+```bash
+.
 ┣ src
-|  ┣ app
-|  |  ┣ landing
-|  |  |  ┣ pages
-|  |  |  |  ┗ landing-page
-|  |  |  |     ┗ landing-page.component|.html|.scss|.ts
-|  |  |  ┗ landing.module.ts
-|  |  ┣ shared
-|  |  |  ┗ shared.module.ts
-|  |  ┣ app-routing.module.ts
-|  |  ┗ app.module.ts
-|  |
-|  ┣ assets
-|  |  ┗ favicons
-|  |      ┗ favicon.ico
-|  |
-|  ┣ config
-|  |  ┣ enums
-|  |  |  ┗ environment.enum.ts
-|  |  ┣ environments
-|  |  |  ┣ environment.devt.ts
-|  |  |  ┗ environment.ts
-|  |  ┣ interfaces
-|  |  |  ┣ config.interface.ts
-|  |  |  ┗ environment.interfaces.ts
-|  |  ┣ services
-|  |  |  ┗ config.service.ts
-|  |  ┣ config.module.ts
-|  |  ┣ envconfig.devt.json
-|  |  ┗ envconfig.prod.json
-|  |
-|  ┣ core
-|  |  ┣ guards
-|  |  |  ┗ singleton.guard.ts
-|  |  ┣ layout
-|  |  |  ┗ toolbar
-|  |  |     ┗ toolbar.component|.html|.scss|.ts
-|  |  ┣ pages
-|  |  |  ┗ page-not-found
-|  |  |     ┗ page-not-found.component|.html|.scss|.ts
-|  |  ┗ core.module.ts
-|  |
-|  ┣ styles
-|  |  ┗ styles.scss
-|  |
-|  ┣ index.html
-|  ┣ main-routing.module.ts
-|  ┣ main.component.html
-|  ┣ main.component.ts
-|  ┣ main.module.ts
-|  ┗ main.ts
-|
+|   ...
 ┣ test
 |   ┣ app
 |   |  ┣ app-routing.module.spec.ts
@@ -87,7 +92,6 @@ These are the sections that this repository proposes to add to the default struc
 |   ┣ main-routing.module.spec.ts
 |   ┣ main.component.spec.ts
 |   ┗ main.module.spec.ts
-.
 ```
 
 ## Directory Structures
