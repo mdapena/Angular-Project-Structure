@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="../docs/images/core_directory.svg" alt="core-directory" width="48px" height="48px" style="color: #5f6368;"/>
+  <br>
+</p>
+
+
 # Core Directory
 
 This module is designed for global functionalities. This directory should contain resources that are always loaded, including route guards, HTTP interceptors, infrastructure-level services like ThemeService and logging, layout components, and routing error pages.

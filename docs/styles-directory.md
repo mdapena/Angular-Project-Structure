@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="../docs/images/styles_directory.svg" alt="styles-directory" width="48px" height="48px" style="color: #5f6368;"/>
+  <br>
+</p>
+
 # Styles Directory
 
 The styles directory is designed to contain all of Angular's global stylesheets. It is recommended to use a structure that fits the needs of the project, keeping the styles as global as possible to avoid boilerplate (e.g., the scss 7-1 pattern).

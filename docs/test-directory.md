@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="../docs/images/test_directory.svg" alt="test-directory" width="48px" height="48px" style="color: #5f6368;"/>
+  <br>
+</p>
+
 # Test Directory
 
 All classes and resources related to the application tests are located in this directory.
