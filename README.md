@@ -15,15 +15,13 @@
 
 # Angular Project Structure
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
-
 ## Description
 
-This project is a proposal for the organisation and structure of an Angular project using the domain and modularity approach. This structure arises from the need to separate the domain/workspace layer from the different concepts of Angular's application and infrastructure. This project defines a directory structure for an Angular application, feel free to design your own structure if these are not suitable.
+This project defines a directory structure proposal for Angular applications with a domain and modularity approach. This structure arises from the need to separate the domain/feature layer from Angular's infrastructure concepts. Feel free to design your own structure if these are not suitable.
 
 ## Summary
 
-The main idea behind this structure is to create an application context section that groups all application features and domain modules, as well as a shared module that contains all reusable classes, resources, and components. All resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing sections, and so on, will be located outside of this context.
+The main idea behind this structure is to create an application context section that groups all domain/feature modules of the app, including a shared module that contains reusable classes and components. All resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so on, will be located outside of this context.
 
 ## Directory Tree Sections
 
@@ -36,6 +34,7 @@ src
 |  |  ┣ pages
 |  |  |  ┗ landing-page
 |  |  |     ┗ landing-page.component|.html|.scss|.ts
+|  |  ┣ landing-routing.module.ts
 |  |  ┗ landing.module.ts
 |  ┣ shared
 |  |  ┗ shared.module.ts
@@ -166,6 +165,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-## Reminder
+## Considerations
 
 Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
