@@ -35,8 +35,8 @@ export class MainModule {
         singletonGuard(parentModule, 'MainModule');
     }
 
-    /** Loads process environment variables and registers custom 
-     * configurations globally.
+    /** Loads the application settings, environment parameters 
+     *  and initial configurations.
      *  @param config */
     static forRoot(config: ConfigService) {
         return () => config.load().then(() => {

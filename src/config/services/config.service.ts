@@ -8,14 +8,14 @@ import { IEnvConfig } from "@config/interfaces/envconfig.interface";
 export class ConfigService {
     private static settings: IEnvConfig;
 
-    /** Global configuration */
+    /** Global settings */
     static get SETTINGS(): Readonly<IEnvConfig> { return ConfigService.settings; }
 
     constructor(private http: HttpClient) { }
 
-    /** Loads and processes configuration variables from JSON files and registers 
-     * them globally. Must be run once.
-     * @returns Promise */
+    /** Loads the application's settings and environment parameters. 
+     *  It must be called once at the APP_INITIALIZER level.
+     *  @returns Promise */
     load() {
         const jsonFile = `config/envconfig.${environment.name}.json`;
         return new Promise((resolve) => {
