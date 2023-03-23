@@ -5,7 +5,7 @@
 
 # Shared Directory
 
-The shared module contains all reusable classes and resources that are used between domain/feature modules.
+The Shared directory contains all reusable classes and resources used and shared between domain/feature modules. For example, you might find the following resources in this directory: common domain services, modal and page components, and so on.
 
 ```bash
 .

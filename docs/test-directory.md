@@ -5,17 +5,30 @@
 
 # Test Directory
 
-All classes and resources related to the application tests are located in this directory.
+This directory contains all of the project's test files and resources. For example, you might find the following resources in the Test directory: test mocks, .spec files, and so on.
 
 ```bash
 .
+┣ src
+|   ...
 ┣ test
 |   ┣ app
+|   |  ┣ landing
+|   |  |  ┣ pages
+|   |  |  |  ┗ landing-page.component.spec.ts
+|   |  |  ┣ landing-routing.module.spec.ts
+|   |  |  ┗ landing.module.spec.ts
+|   |  ┣ shared
+|   |  |  ┗ shared.module.spec.ts
 |   |  ┣ app-routing.module.spec.ts
 |   |  ┗ app.module.spec.ts
 |   ┣ config
 |   |  ┗ config.service.spec.ts
 |   ┣ core
+|   |  ┣ guards
+|   |  |  ┗ singleton.guard.spec.ts
+|   |  ┣ layout
+|   |  |  ┗ toolbar.component.spec.ts
 |   |  ┣ pages
 |   |  |  ┗ page-not-found.component.spec.ts
 |   |  ┗ singleton.guard.spec.ts

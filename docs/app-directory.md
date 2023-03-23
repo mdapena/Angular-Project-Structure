@@ -5,15 +5,16 @@
 
 # App Directory
 
-The app directory contains a collection of domain/feature modules that are self-contained. This allows Angular to load only the module needed to display the request, saving bandwidth and speeding up the entire application. To accomplish this, each module must have its own routing, which is defined as a loadChildren route resource in the AppRoutingModule.
+The App directory contains all domain/feature modules of the application. For example, in this directory, you might find the following modules: Home, Landing, About, Contact, Auth and so on. Lazy load techniques should be applied to these modules to ensure that Angular loads only the module needed to display the request, saving bandwidth and speeding up the entire application.
 
 ```bash
 .
-┣ app # All domain/feature modules should be added here.
+┣ app
 |  ┣ landing
 |  |  ┣ pages
 |  |  |  ┗ landing-page
 |  |  |     ┗ landing-page.component|.html|.scss|.ts
+|  |  ┣ landing-routing.module.ts
 |  |  ┗ landing.module.ts
 |  ┣ shared
 |  |  ┗ shared.module.ts

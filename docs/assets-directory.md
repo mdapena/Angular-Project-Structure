@@ -5,7 +5,7 @@
 
 # Assets Directory
 
-The Assets directory is a folder that contains global static files that are used throughout the application, including images, icons, fonts...
+The Assets directory is a public folder that contains all of the application's files that can be accessed from the browser and queried through an HTTP request. For example, you might find the following files in this directory: images, icons, fonts, etc.
 
 ```bash
 .

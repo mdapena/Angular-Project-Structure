@@ -6,7 +6,7 @@
 
 # Core Directory
 
-This module is designed for global functionalities. This directory should contain resources that are always loaded, including route guards, HTTP interceptors, infrastructure-level services like ThemeService and logging, layout components, and routing error pages.
+The Core directory contains all the infrastructure functions that are always loaded. For example, in this directory, you might find the following resources: route guards, HTTP interceptors, layout components, routing error pages, infrastructure-level services like ThemeService, logging, AuthService, etc.
 
 ```bash
 .

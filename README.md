@@ -88,11 +88,22 @@ src
 |   ...
 ┣ test
 |   ┣ app
+|   |  ┣ landing
+|   |  |  ┣ pages
+|   |  |  |  ┗ landing-page.component.spec.ts
+|   |  |  ┣ landing-routing.module.spec.ts
+|   |  |  ┗ landing.module.spec.ts
+|   |  ┣ shared
+|   |  |  ┗ shared.module.spec.ts
 |   |  ┣ app-routing.module.spec.ts
 |   |  ┗ app.module.spec.ts
 |   ┣ config
 |   |  ┗ config.service.spec.ts
 |   ┣ core
+|   |  ┣ guards
+|   |  |  ┗ singleton.guard.spec.ts
+|   |  ┣ layout
+|   |  |  ┗ toolbar.component.spec.ts
 |   |  ┣ pages
 |   |  |  ┗ page-not-found.component.spec.ts
 |   |  ┗ singleton.guard.spec.ts
