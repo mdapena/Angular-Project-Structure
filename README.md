@@ -23,7 +23,7 @@ This project defines a directory structure proposal for Angular applications wit
 
 The main idea behind this structure is to create an application context section that groups all domain/feature modules of the app, including a shared module that contains reusable classes and components. All resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so on, will be located outside of this context.
 
-<br>
+&nbsp;
 
 # Directory Tree Sections
 
@@ -114,7 +114,7 @@ src
 |   ┗ main.module.spec.ts
 ```
 
-<br>
+&nbsp;
 
 # Directory Structure Parts
 
@@ -132,7 +132,7 @@ src
 
 - [Path Alias](./docs/path-alias.md)
 
-<br>
+&nbsp;
 
 # Tree Structure in a New Angular Application
 
@@ -204,7 +204,7 @@ $ sed -i '1s/^/\/* To learn more about this file see: https:\/\/angular.io\/conf
 npm uninstall -g json # Uninstalling the npm json cli package
 ```
 
-<br>
+&nbsp;
 
 # Running the App
 
@@ -228,7 +228,7 @@ $ ng build
 $ ng test
 ```
 
-<br>
+&nbsp;
 
 # License
 
@@ -252,10 +252,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-<br>
+&nbsp;
 
 ## Considerations
-
-<hr>
 
 Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
