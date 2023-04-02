@@ -15,11 +15,13 @@
 
 # Angular Project Structure
 
-This project defines a directory structure proposal for Angular applications with a domain and modularity approach. This structure arises from the need to separate the domain/feature layer from Angular's infrastructure concepts. Feel free to design your own structure if these are not suitable.
+This repository proposes a directory structure for any Angular application with a domain and modularity approach. This structure arises from the need to separate the domain/feature layer from the Angular infrastructure concepts.
 
-The main idea behind this structure is to create an application context section that groups all domain/feature modules of the app, including a shared module that contains reusable classes and components. All resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so on, will be located outside of this context.
+The main idea behind this structure is to create an application context bundle that groups all the domain/feature modules of the app, including a shared module inside the app directory, leaving the rest of the infrastructure modules and files outside this scope.
 
-## Directory Tree Sections
+This directory structure corrects the ng creation of all files within the app directory. The default ng structure forces all code to exist as a subdirectory to the app without giving a clear space for files that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so on.
+
+## Tree Sections
 
 These are the sections that this repository proposes to add to the default structure of an Angular application. Click on the sections below for more information.
 
@@ -126,7 +128,7 @@ src
 
 ## Tree Structure in a New Angular Application
 
-These instructions describe how to add this tree structure to a new Angular application that has been created using the Angular CLI. Remember to replace the value of **"project-name"** in the commands with the name of your new project.
+These instructions describe how to add this structure to a new Angular application that has been created using the Angular CLI. Remember to replace the value of **"project-name"** in the commands with the desired one.
 
 #### 1 - Create a new workspace and an initial application
 
@@ -239,4 +241,4 @@ THE SOFTWARE.
 
 ## Considerations
 
-Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
+Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome. Feel free to design your own structure if these are not suitable.
