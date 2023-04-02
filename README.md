@@ -156,10 +156,10 @@ $ sed -i '1d' tsconfig.json && sed -i '1d' tsconfig.spec.json
 # tsconfig.json
 $ json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
 $ json -f tsconfig.json -I \
-$    -e "this.compilerOptions.paths['@config/*'] = ['src/config/*']" \
-$    -e "this.compilerOptions.paths['@core/*'] = ['src/core/*']" \
-$    -e "this.compilerOptions.paths['@app/*'] = ['src/app/*']" \
-$    -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
+    -e "this.compilerOptions.paths['@config/*'] = ['src/config/*']" \
+    -e "this.compilerOptions.paths['@core/*'] = ['src/core/*']" \
+    -e "this.compilerOptions.paths['@app/*'] = ['src/app/*']" \
+    -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
 ```
 
 ##### 2.2 - tsconfig.spec.json
@@ -167,8 +167,8 @@ $    -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
 ```bash
 # tsconfig.spec.json
 $ json -f tsconfig.spec.json -I \
-$    -e "this.include[0] = 'test/**/*.spec.ts'" \
-$    -e "this.include[1] = 'test/**/*.d.ts'" 
+    -e "this.include[0] = 'test/**/*.spec.ts'" \
+    -e "this.include[1] = 'test/**/*.d.ts'" 
 ```
 
 ##### 2.3 - angular.json
@@ -176,13 +176,13 @@ $    -e "this.include[1] = 'test/**/*.d.ts'"
 ```bash
 # angular.json
 $ json -f angular.json -I \
-$    -e "this.projects['project-name'].architect.build.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
-$    -e "this.projects['project-name'].architect.build.options.styles = ['src/styles/styles.scss']" \
-$    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].replace = 'src/config/environments/environment.ts'" \
-$    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].with = 'src/config/environments/environment.devt.ts'" \
-$    -e "this.projects['project-name'].architect.test.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
-$    -e "this.projects['project-name'].architect.test.options.styles = ['src/styles/styles.scss']" \
-$    -e "this.projects['project-name'].architect.test.options.include = ['../test/**/**.spec.ts', '../test/**/**.d.ts']"
+    -e "this.projects['project-name'].architect.build.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
+    -e "this.projects['project-name'].architect.build.options.styles = ['src/styles/styles.scss']" \
+    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].replace = 'src/config/environments/environment.ts'" \
+    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].with = 'src/config/environments/environment.devt.ts'" \
+    -e "this.projects['project-name'].architect.test.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
+    -e "this.projects['project-name'].architect.test.options.styles = ['src/styles/styles.scss']" \
+    -e "this.projects['project-name'].architect.test.options.include = ['../test/**/**.spec.ts', '../test/**/**.d.ts']"
 ```
 
 #### 3 - Post configuration
