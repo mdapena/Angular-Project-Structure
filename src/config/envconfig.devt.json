@@ -1,0 +1,12 @@
+{
+    "env": {
+        "name": "devt"
+    },
+    "app": {
+        "name": "App Name",
+        "owner": "@NachoDPP"
+    },
+    "apiServer": {
+        "url": "http://localhost:3000/api"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "env": {
+        "name": "prod"
+    },
+    "app": {
+        "name": "App Name",
+        "owner": "@NachoDPP"
+    },
+    "apiServer": {
+        "url": "https://production.com/api"
+    }
+}
