@@ -128,7 +128,7 @@ src
 
 These instructions describe how to add this tree structure to a new Angular application that has been created using the Angular CLI. Remember to replace the value of **"project-name"** in the commands with the name of your new project.
 
-### 1 - Pre-Installation
+### 1 - Create a new workspace and an initial application
 
 ```bash
 # Prerequisites: Install [Angular CLI] and [Node.js] which includes [Node Package Manager][npm]
@@ -141,7 +141,7 @@ $ mv Angular-Project-Structure/test project-name/test
 $ rmdir Angular-Project-Structure 
 ```
 
-### 2 - Typescript Configurations, Path Aliases and Angular.json
+### 2 - Typescript configurations, path aliases and angular.json
 
 ```bash
 # Typescript Configurations and Path Aliases
@@ -185,7 +185,7 @@ $    -e "this.projects['project-name'].architect.test.options.styles = ['src/sty
 $    -e "this.projects['project-name'].architect.test.options.include = ['../test/**/**.spec.ts', '../test/**/**.d.ts']"
 ```
 
-### 3 - Post-Installation
+### 3 - Post configuration
 
 ```bash
 # Retrieving the commented line from the tsconfig.json and tsconfig.spec.json files
