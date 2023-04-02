@@ -126,28 +126,28 @@ src
 
 ## Tree Structure in a New Angular Application
 
-These instructions describe how to add this directory structure to a new Angular application that has been created using the Angular CLI.
+These instructions describe how to add this tree structure to a new Angular application that has been created using the Angular CLI. Remember to replace the value of **"project-name"** in the commands with the name of your new project.
 
 ### 1 - Pre-Installation
 
 ```bash
 # Prerequisites: Install [Angular CLI] and [Node.js] which includes [Node Package Manager][npm]
-$ ng new project-name # Create a new Angular application
-$ cd project-name && ng generate environments && cd .. # Generate environments
-$ git clone https://github.com/NachoDPP/Angular-Project-Structure.git # Clone Directory Structure
-$ rmdir project-name/src # Remove the default src directory structure
-$ mv Angular-Project-Structure/src project-name/src # Move the cloned src directory to the project
-$ mv Angular-Project-Structure/test project-name/test # Move the cloned test directory to the project
-$ rmdir Angular-Project-Structure # Delete the cloned project
+$ ng new project-name
+$ cd project-name && ng generate environments && cd .. 
+$ git clone https://github.com/NachoDPP/Angular-Project-Structure.git 
+$ rmdir project-name/src 
+$ mv Angular-Project-Structure/src project-name/src 
+$ mv Angular-Project-Structure/test project-name/test 
+$ rmdir Angular-Project-Structure 
 ```
 
 ### 2 - Typescript Configurations, Path Aliases and Angular.json
 
 ```bash
 # Typescript Configurations and Path Aliases
-$ json --version || npm install -g json # Install the npm json cli package if it doesn't exist
-$ cd project-name # Move to project directory
-$ sed -i '1d' tsconfig.json && sed -i '1d' tsconfig.spec.json # Remove the first commented line from the tsconfig.json and tsconfig.spec.json files
+$ json --version || npm install -g json
+$ cd project-name
+$ sed -i '1d' tsconfig.json && sed -i '1d' tsconfig.spec.json
 ```
 
 #### 2.1 - tsconfig.json
@@ -156,10 +156,10 @@ $ sed -i '1d' tsconfig.json && sed -i '1d' tsconfig.spec.json # Remove the first
 # tsconfig.json
 $ json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
 $ json -f tsconfig.json -I \
-$   -e "this.compilerOptions.paths['@config/*'] = ['src/config/*']" \
-$   -e "this.compilerOptions.paths['@core/*'] = ['src/core/*']" \
-$   -e "this.compilerOptions.paths['@app/*'] = ['src/app/*']" \
-$   -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
+$    -e "this.compilerOptions.paths['@config/*'] = ['src/config/*']" \
+$    -e "this.compilerOptions.paths['@core/*'] = ['src/core/*']" \
+$    -e "this.compilerOptions.paths['@app/*'] = ['src/app/*']" \
+$    -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
 ```
 
 #### 2.2 - tsconfig.spec.json
@@ -167,8 +167,8 @@ $   -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
 ```bash
 # tsconfig.spec.json
 $ json -f tsconfig.spec.json -I \
-$   -e "this.include[0] = 'test/**/*.spec.ts'" \
-$   -e "this.include[1] = 'test/**/*.d.ts'" 
+$    -e "this.include[0] = 'test/**/*.spec.ts'" \
+$    -e "this.include[1] = 'test/**/*.d.ts'" 
 ```
 
 #### 2.3 - angular.json
@@ -176,7 +176,7 @@ $   -e "this.include[1] = 'test/**/*.d.ts'"
 ```bash
 # angular.json
 $ json -f angular.json -I \
-$   -e "this.projects['project-name'].architect.build.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
+$    -e "this.projects['project-name'].architect.build.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
 $    -e "this.projects['project-name'].architect.build.options.styles = ['src/styles/styles.scss']" \
 $    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].replace = 'src/config/environments/environment.ts'" \
 $    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].with = 'src/config/environments/environment.devt.ts'" \
