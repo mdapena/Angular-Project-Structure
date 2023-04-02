@@ -23,7 +23,9 @@ This project defines a directory structure proposal for Angular applications wit
 
 The main idea behind this structure is to create an application context section that groups all domain/feature modules of the app, including a shared module that contains reusable classes and components. All resources that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so on, will be located outside of this context.
 
-## Directory Tree Sections
+<br>
+
+# Directory Tree Sections
 
 These are the sections that this repository proposes to add to the default structure of an Angular application. See the Directory Structures section for more information.
 
@@ -112,7 +114,9 @@ src
 |   ┗ main.module.spec.ts
 ```
 
-## Directory Structure Parts
+<br>
+
+# Directory Structure Parts
 
 #### Sections
 
@@ -128,14 +132,86 @@ src
 
 - [Path Alias](./docs/path-alias.md)
 
-## Installation
+<br>
+
+# Tree Structure in a New Angular Application
+
+These instructions describe how to add this directory structure to a new Angular application that has been created using the Angular CLI.
+
+## 1 - Pre-Installation
+
+```bash
+# Prerequisites: Install [Angular CLI] and [Node.js] which includes [Node Package Manager][npm]
+$ ng new project-name # Create a new Angular application
+$ cd project-name && ng generate environments && cd .. # Generate environments
+$ git clone https://github.com/NachoDPP/Angular-Project-Structure.git # Clone Directory Structure
+$ rmdir project-name/src # Remove the default src directory structure
+$ mv Angular-Project-Structure/src project-name/src # Move the cloned src directory to the project
+$ mv Angular-Project-Structure/test project-name/test # Move the cloned test directory to the project
+$ rmdir Angular-Project-Structure # Delete the cloned project
+```
+
+## 2 - Typescript Configurations, Path Aliases and Angular.json
+
+```bash
+# Typescript Configurations and Path Aliases
+$ json --version || npm install -g json # Install the npm json cli package if it doesn't exist
+$ cd project-name # Move to project directory
+$ sed -i '1d' tsconfig.json && sed -i '1d' tsconfig.spec.json # Remove the first commented line from the tsconfig.json and tsconfig.spec.json files
+```
+
+### 2.1 - tsconfig.json
+
+```bash
+# tsconfig.json
+$ json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
+$ json -f tsconfig.json -I \
+$   -e "this.compilerOptions.paths['@config/*'] = ['src/config/*']" \
+$   -e "this.compilerOptions.paths['@core/*'] = ['src/core/*']" \
+$   -e "this.compilerOptions.paths['@app/*'] = ['src/app/*']" \
+$   -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
+```
+
+### 2.2 - tsconfig.spec.json
+
+```bash
+# tsconfig.spec.json
+$ json -f tsconfig.spec.json -I \
+$   -e "this.include[0] = 'test/**/*.spec.ts'" \
+$   -e "this.include[1] = 'test/**/*.d.ts'" 
+```
+
+### 2.3 - angular.json
+
+```bash
+# angular.json
+$ json -f angular.json -I \
+$   -e "this.projects['project-name'].architect.build.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
+$    -e "this.projects['project-name'].architect.build.options.styles = ['src/styles/styles.scss']" \
+$    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].replace = 'src/config/environments/environment.ts'" \
+$    -e "this.projects['project-name'].architect.build.configurations.development.fileReplacements[0].with = 'src/config/environments/environment.devt.ts'" \
+$    -e "this.projects['project-name'].architect.test.options.assets = ['src/assets', 'src/config/envconfig.devt.json', 'src/config/envconfig.prod.json']" \
+$    -e "this.projects['project-name'].architect.test.options.styles = ['src/styles/styles.scss']" \
+$    -e "this.projects['project-name'].architect.test.options.include = ['../test/**/**.spec.ts', '../test/**/**.d.ts']"
+```
+
+## 3 - Post-Installation
+
+```bash
+# Retrieving the commented line from the tsconfig.json and tsconfig.spec.json files
+$ sed -i '1s/^/\/* To learn more about this file see: https:\/\/angular.io\/config\/tsconfig. *\/\n/' tsconfig.json 
+$ sed -i '1s/^/\/* To learn more about this file see: https:\/\/angular.io\/config\/tsconfig. *\/\n/' tsconfig.spec.json
+npm uninstall -g json # Uninstalling the npm json cli package
+```
+
+<br>
+
+# Running the App
 
 ```bash
 # Prerequisites: Install [Node.js] which includes [Node Package Manager][npm]
 $ npm install
 ```
-
-## Running the app
 
 ```bash
 # Development
@@ -147,14 +223,14 @@ $ ng serve
 $ ng build
 ```
 
-## Test
-
 ```bash
 # Unit Tests
 $ ng test
 ```
 
-## License
+<br>
+
+# License
 
 Copyright (c) Manuel Da Pena. [@NachoDPP](https://github.com/NachoDPP "@NachoDPP")
 
@@ -176,6 +252,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+<br>
+
 ## Considerations
+
+<hr>
 
 Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome.
