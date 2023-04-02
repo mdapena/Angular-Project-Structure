@@ -135,10 +135,10 @@ These instructions describe how to add this tree structure to a new Angular appl
 $ ng new project-name
 $ cd project-name && ng generate environments && cd .. 
 $ git clone https://github.com/NachoDPP/Angular-Project-Structure.git 
-$ rmdir project-name/src 
+$ rm -rf project-name/src 
 $ mv Angular-Project-Structure/src project-name/src 
 $ mv Angular-Project-Structure/test project-name/test 
-$ rmdir Angular-Project-Structure 
+$ rm -rf Angular-Project-Structure
 ```
 
 #### 2 - Typescript configurations, path aliases and angular.json
@@ -191,7 +191,7 @@ $    -e "this.projects['project-name'].architect.test.options.include = ['../tes
 # Retrieving the commented line from the tsconfig.json and tsconfig.spec.json files
 $ sed -i '1s/^/\/* To learn more about this file see: https:\/\/angular.io\/config\/tsconfig. *\/\n/' tsconfig.json 
 $ sed -i '1s/^/\/* To learn more about this file see: https:\/\/angular.io\/config\/tsconfig. *\/\n/' tsconfig.spec.json
-npm uninstall -g json # Uninstalling the npm json cli package
+$ npm uninstall -g json # Uninstalling the npm json cli package
 ```
 ## Running the App
 
