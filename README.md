@@ -128,7 +128,7 @@ src
 
 These instructions describe how to add this tree structure to a new Angular application that has been created using the Angular CLI. Remember to replace the value of **"project-name"** in the commands with the name of your new project.
 
-### 1 - Create a new workspace and an initial application
+#### 1 - Create a new workspace and an initial application
 
 ```bash
 # Prerequisites: Install [Angular CLI] and [Node.js] which includes [Node Package Manager][npm]
@@ -141,7 +141,7 @@ $ mv Angular-Project-Structure/test project-name/test
 $ rmdir Angular-Project-Structure 
 ```
 
-### 2 - Typescript configurations, path aliases and angular.json
+#### 2 - Typescript configurations, path aliases and angular.json
 
 ```bash
 # Typescript Configurations and Path Aliases
@@ -150,7 +150,7 @@ $ cd project-name
 $ sed -i '1d' tsconfig.json && sed -i '1d' tsconfig.spec.json
 ```
 
-#### 2.1 - tsconfig.json
+##### 2.1 - tsconfig.json
 
 ```bash
 # tsconfig.json
@@ -162,7 +162,7 @@ $    -e "this.compilerOptions.paths['@app/*'] = ['src/app/*']" \
 $    -e "this.compilerOptions.paths['@assets/*'] = ['src/assets/*']"
 ```
 
-#### 2.2 - tsconfig.spec.json
+##### 2.2 - tsconfig.spec.json
 
 ```bash
 # tsconfig.spec.json
@@ -171,7 +171,7 @@ $    -e "this.include[0] = 'test/**/*.spec.ts'" \
 $    -e "this.include[1] = 'test/**/*.d.ts'" 
 ```
 
-#### 2.3 - angular.json
+##### 2.3 - angular.json
 
 ```bash
 # angular.json
@@ -185,7 +185,7 @@ $    -e "this.projects['project-name'].architect.test.options.styles = ['src/sty
 $    -e "this.projects['project-name'].architect.test.options.include = ['../test/**/**.spec.ts', '../test/**/**.d.ts']"
 ```
 
-### 3 - Post configuration
+#### 3 - Post configuration
 
 ```bash
 # Retrieving the commented line from the tsconfig.json and tsconfig.spec.json files
