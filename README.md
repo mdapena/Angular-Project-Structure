@@ -21,7 +21,23 @@ The main idea behind this structure is to create an application context section 
 
 ## Directory Tree Sections
 
-These are the sections that this repository proposes to add to the default structure of an Angular application. See the Directory Structures section for more information.
+These are the sections that this repository proposes to add to the default structure of an Angular application. Click on the sections below for more information.
+
+- **Sections**
+
+  - [App Directory](./docs/app-directory.md)
+  - [Shared Directory](./docs/shared-directory.md)
+  - [Assets Directory](./docs/assets-directory.md)
+  - [Config Directory](./docs/config-directory.md)
+  - [Core Directory](./docs/core-directory.md)
+  - [Styles Directory](./docs/styles-directory.md)
+  - [Test Directory](./docs/test-directory.md)
+
+- **Extras**
+
+  - [Path Alias](./docs/path-alias.md)
+
+## Tree Structure
 
 ```bash
 src
@@ -107,22 +123,6 @@ src
 |   ┣ main.component.spec.ts
 |   ┗ main.module.spec.ts
 ```
-
-## Directory Structure Parts
-
-#### Sections
-
-- [App Directory](./docs/app-directory.md)
-- [Shared Directory](./docs/shared-directory.md)
-- [Assets Directory](./docs/assets-directory.md)
-- [Config Directory](./docs/config-directory.md)
-- [Core Directory](./docs/core-directory.md)
-- [Styles Directory](./docs/styles-directory.md)
-- [Test Directory](./docs/test-directory.md)
-
-#### Extras
-
-- [Path Alias](./docs/path-alias.md)
 
 ## Tree Structure in a New Angular Application
 
