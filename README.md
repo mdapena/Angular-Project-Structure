@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./docs/images/angular.png" alt="angular-logo" width="180px" height="180px"/>
   <br>
-  <i>A modular/domain driven structure for Angular projects</i>
+  <i>A modular and domain-driven structure for Angular projects</i>
   <br>
   <br>
   <a href="https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt" target="_blank"><img src="https://badgen.net/badge/license/MIT/blue" alt="license" /></a>
