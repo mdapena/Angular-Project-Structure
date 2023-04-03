@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  nginx:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    container_name: nginx-server
+    restart: always
+    ports:
+      - 8080:80
