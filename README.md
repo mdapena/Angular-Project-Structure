@@ -17,6 +17,8 @@
 
 This repository proposes a directory structure for any Angular application with a domain and modularity approach. This structure arises from the need to separate the domain/feature layer from the Angular infrastructure concepts.
 
+## About
+
 The main idea behind this structure is to create an application context bundle that groups all the domain/feature modules of the app, including a shared module inside the app directory, leaving the rest of the infrastructure modules and files outside this scope.
 
 This directory structure corrects the ng creation of all files within the app directory. The default ng structure forces all code to exist as a subdirectory to the app without giving a clear space for files that are not bound to the application domain or infrastructure related, such as config and core modules, application bootstrap factories, testing section, and so on.
