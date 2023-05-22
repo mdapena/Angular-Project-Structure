@@ -5,7 +5,7 @@
 
 # App Directory
 
-The App directory contains all domain/feature modules of the application. For example, in this directory, you might find the following modules: Home, Landing, About, Contact, Auth and so on. Lazy load techniques should be applied to these modules to ensure that Angular loads only the module needed to display the request, saving bandwidth and speeding up the entire application.
+The App directory contains all domain/feature modules of the application. For example, in this directory, you might find the following modules: Home, Landing, About, Contact, Auth, and so on. Lazy loading techniques should be applied to these modules to ensure that Angular loads only the module needed to display the request, saving bandwidth and speeding up the entire application.
 
 ```bash
 .

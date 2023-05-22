@@ -5,7 +5,7 @@
 
 # Styles Directory
 
-The Styles directory contains all of Angular's global stylesheet files. It is recommended to implement a structure that fits the project's needs, keeping the styles as global as possible to avoid boilerplate (e.g., the scss 7-1 pattern).
+The Styles directory contains all of Angular's global stylesheet files. It is recommended to implement a structure that fits the project's needs, keeping the styles as global as possible to avoid boilerplate (e.g., the SCSS 7-1 pattern).
 
 ```bash
 .
