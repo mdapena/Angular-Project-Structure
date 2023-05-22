@@ -5,7 +5,7 @@
 
 # Path Alias
 
-Path aliases simplify paths by allowing you to declare a word/alias  in the application for an absolute path instead of using the full path name. It is recommended to use them to make your code easier to read and maintain.
+Path aliases simplify paths by allowing you to declare a word/alias in the application for an absolute path instead of using the full path name. It is recommended to use them to make your code easier to read and maintain.
 
 ```bash
 ...

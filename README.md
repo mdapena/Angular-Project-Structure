@@ -243,4 +243,4 @@ THE SOFTWARE.
 
 ## Considerations
 
-Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome. Feel free to design your own structure if these are not suitable.
+Please keep in mind that this concept is in its early stages of execution and design; any suggestions or comments are welcome. Feel free to design your own structure if this one is not suitable.
